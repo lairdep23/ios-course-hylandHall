@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="CO7-Ng-UUb">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="hylandHallExercise" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +17,435 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hylandHallMain" translatesAutoresizingMaskIntoConstraints="NO" id="ZVu-M9-SJL">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="400" height="800"/>
+                                </variation>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hem-Lt-haw">
+                                <rect key="frame" x="20" y="326" width="331" height="75"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="uwwlogo" translatesAutoresizingMaskIntoConstraints="NO" id="42v-Uf-pSo">
+                                        <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="75" id="Lp4-U9-ZBB"/>
+                                            <constraint firstAttribute="height" constant="75" id="fQD-ml-GxE"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UW WHITEWATER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eci-hU-CEP">
+                                        <rect key="frame" x="85" y="0.0" width="246" height="75"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="246" id="60C-Nh-K83"/>
+                                            <constraint firstAttribute="height" constant="75" id="HSu-hi-d9V"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="24"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <size key="shadowOffset" width="3" height="-1"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="5mk-dF-dg0">
+                                <rect key="frame" x="20" y="20" width="141" height="84"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="LEARN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l0g-RP-HYy">
+                                        <rect key="frame" x="0.0" y="0.0" width="141" height="26"/>
+                                        <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="24"/>
+                                        <color key="textColor" red="0.60411114089999995" green="0.39517011190000001" blue="0.80376717929999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <size key="shadowOffset" width="3" height="-1"/>
+                                        <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="141" height="26"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.75" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="RESEARCH" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="12Z-aV-eBr">
+                                        <rect key="frame" x="0.0" y="26" width="141" height="29"/>
+                                        <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="24"/>
+                                        <color key="textColor" red="0.60411114089999995" green="0.39517011190000001" blue="0.80376717929999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <size key="shadowOffset" width="3" height="-1"/>
+                                        <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
+                                            <rect key="frame" x="0.0" y="26" width="141" height="29"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="GROW" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GWh-9d-Wnc">
+                                        <rect key="frame" x="0.0" y="55" width="141" height="29"/>
+                                        <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="24"/>
+                                        <color key="textColor" red="0.60411114089999995" green="0.39517011190000001" blue="0.80376717929999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <size key="shadowOffset" width="3" height="-1"/>
+                                        <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
+                                            <rect key="frame" x="0.0" y="55" width="141" height="29"/>
+                                        </variation>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="141" id="Mnz-qp-q1W"/>
+                                    <constraint firstAttribute="height" constant="84" id="Wqk-mE-euW"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="TIMOTHY J. HYLAND HALL" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LgQ-ua-Jnt">
+                                <rect key="frame" x="20" y="171" width="419" height="147"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="419" id="72z-tI-HRr"/>
+                                    <constraint firstAttribute="width" constant="360" id="N1r-Np-kXi"/>
+                                    <constraint firstAttribute="height" constant="147" id="thp-hi-D8j"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="44"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="3" height="-1"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="N1r-Np-kXi"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <exclude reference="72z-tI-HRr"/>
+                                        <include reference="N1r-Np-kXi"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LgQ-ua-Jnt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="LkP-k0-sag"/>
+                            <constraint firstItem="hem-Lt-haw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="MrY-y3-4C9"/>
+                            <constraint firstItem="5mk-dF-dg0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="PnK-1b-KTq"/>
+                            <constraint firstItem="5mk-dF-dg0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="dnv-Lt-xPU"/>
+                            <constraint firstItem="LgQ-ua-Jnt" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="hrf-to-PVh"/>
+                            <constraint firstItem="LgQ-ua-Jnt" firstAttribute="top" secondItem="5mk-dF-dg0" secondAttribute="bottom" constant="100" id="rx6-tD-Dhc"/>
+                            <constraint firstItem="hem-Lt-haw" firstAttribute="top" secondItem="LgQ-ua-Jnt" secondAttribute="bottom" constant="15" id="vuv-Bx-KsR"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="hrf-to-PVh"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="hrf-to-PVh"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-826.5" y="258"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="fvt-L3-WVV">
+            <objects>
+                <viewController id="CO7-Ng-UUb" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Lhz-Iw-v4p"/>
+                        <viewControllerLayoutGuide type="bottom" id="pFP-Qh-iNp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Jea-Yv-5Wb">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleAspectFill" ambiguous="YES" misplaced="YES" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="sP3-IU-ijj">
+                                <rect key="frame" x="-2" y="248" width="4525" height="220"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Zc1-qw-SBp">
+                                        <rect key="frame" x="0.0" y="0.0" width="4525" height="25"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="LOCATION" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NnO-5h-vW8">
+                                                <rect key="frame" x="0.0" y="0.0" width="119" height="25"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="fHw-kO-u6g"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="20"/>
+                                                <color key="textColor" red="0.60411114089999995" green="0.39517011190000001" blue="0.80376717929999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <size key="shadowOffset" width="3" height="-1"/>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="fHw-kO-u6g"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <mask key="constraints">
+                                                        <include reference="fHw-kO-u6g"/>
+                                                    </mask>
+                                                </variation>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="809 W Starin Rd, Whitewater, WI 53190" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DDp-tB-aae">
+                                                <rect key="frame" x="124" y="0.0" width="4401" height="25"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="97P-uc-9Ve"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="16"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="97P-uc-9Ve"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <mask key="constraints">
+                                                        <include reference="97P-uc-9Ve"/>
+                                                    </mask>
+                                                </variation>
+                                            </label>
+                                        </subviews>
+                                        <variation key="heightClass=regular-widthClass=compact" alignment="top" axis="vertical"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="tJE-8s-wuO">
+                                        <rect key="frame" x="0.0" y="60" width="4525" height="25"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="HISTORY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Foi-Lo-2kY">
+                                                <rect key="frame" x="0.0" y="0.0" width="2260" height="25"/>
+                                                <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="20"/>
+                                                <color key="textColor" red="0.60411114089999995" green="0.39517011190000001" blue="0.80376717929999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <size key="shadowOffset" width="3" height="-1"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Hyland Hall is the home of the College of Business and Economics and was constructed in 2008." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7uX-e4-XCe">
+                                                <rect key="frame" x="2265" y="0.0" width="2260" height="25"/>
+                                                <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="17"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="91" id="wPr-HC-ex8"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="wPr-HC-ex8"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact" alignment="fill" axis="vertical" distribution="fillProportionally">
+                                            <mask key="constraints">
+                                                <exclude reference="wPr-HC-ex8"/>
+                                            </mask>
+                                        </variation>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="CQN-p0-h1v">
+                                        <rect key="frame" x="0.0" y="119" width="4525" height="25"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="MISSION" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RUk-sZ-Imf">
+                                                <rect key="frame" x="0.0" y="0.0" width="2260" height="25"/>
+                                                <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="20"/>
+                                                <color key="textColor" red="0.60411114089999995" green="0.39517011190000001" blue="0.80376717929999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <size key="shadowOffset" width="3" height="-1"/>
+                                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
+                                                    <rect key="frame" x="0.0" y="0.0" width="97" height="92"/>
+                                                </variation>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B0f-4X-Mf4">
+                                                <rect key="frame" x="2265" y="0.0" width="2260" height="25"/>
+                                                <string key="text">The UW-Whitewater College of Business and Economics is an inclusive, collaborative and entrepreneurial learning community dedicated to sharing values, knowledge and skills to prepare current and future business professionals to contribute successfully and responsibly in a global business environment. </string>
+                                                <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="17"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
+                                                    <rect key="frame" x="0.0" y="97" width="350" height="142"/>
+                                                </variation>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="172" id="Zfp-Oi-NwU"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="Zfp-Oi-NwU"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact" alignment="top" axis="vertical">
+                                            <mask key="constraints">
+                                                <exclude reference="Zfp-Oi-NwU"/>
+                                            </mask>
+                                        </variation>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="OYc-JE-YyS">
+                                        <rect key="frame" x="0.0" y="179" width="4525" height="41"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="DEPARTMENTS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jr1-kw-dMO">
+                                                <rect key="frame" x="0.0" y="0.0" width="2260" height="41"/>
+                                                <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="20"/>
+                                                <color key="textColor" red="0.60411114089999995" green="0.39517011190000001" blue="0.80376717929999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <size key="shadowOffset" width="3" height="-1"/>
+                                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
+                                                    <rect key="frame" x="0.0" y="0.0" width="169" height="114"/>
+                                                </variation>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5lE-41-CgM">
+                                                <rect key="frame" x="2265" y="0.0" width="2260" height="41"/>
+                                                <string key="text">Accounting, Econmics, Finance &amp; Business Law, Interdepartmental, Management, Marketing, Safety &amp; Health, IT &amp; Supply Chain Management
+</string>
+                                                <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="17"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
+                                                    <rect key="frame" x="0.0" y="119" width="360" height="82"/>
+                                                </variation>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="111" id="6BY-4Z-mbC"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="6BY-4Z-mbC"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact" alignment="top" axis="vertical" distribution="fill">
+                                            <mask key="constraints">
+                                                <exclude reference="6BY-4Z-mbC"/>
+                                            </mask>
+                                        </variation>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Zc1-qw-SBp" firstAttribute="top" secondItem="sP3-IU-ijj" secondAttribute="top" id="Ajd-Te-I1k"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Ajd-Te-I1k"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" alignment="fill" axis="vertical" distribution="fillProportionally">
+                                    <mask key="constraints">
+                                        <include reference="Ajd-Te-I1k"/>
+                                    </mask>
+                                </variation>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UWWhitewateHyland4" translatesAutoresizingMaskIntoConstraints="NO" id="xse-QD-Sid">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Gs0-Hu-oa0"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Gs0-Hu-oa0"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="400" height="100"/>
+                                    <mask key="constraints">
+                                        <include reference="Gs0-Hu-oa0"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ABOUT HYLAND HALL" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dSK-70-fBj">
+                                <rect key="frame" x="20" y="171" width="419" height="147"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="Nor-Cd-78U"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="TPD-aj-hQE"/>
+                                    <constraint firstAttribute="width" constant="360" id="Ylj-KN-euS"/>
+                                    <constraint firstAttribute="width" constant="419" id="pOI-dC-h9k"/>
+                                    <constraint firstAttribute="height" constant="147" id="xuc-Yl-Nmv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="38"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="3" height="-1"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Nor-Cd-78U"/>
+                                        <exclude reference="TPD-aj-hQE"/>
+                                        <exclude reference="Ylj-KN-euS"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="18" y="0.0" width="364" height="100"/>
+                                    <mask key="constraints">
+                                        <include reference="Nor-Cd-78U"/>
+                                        <include reference="TPD-aj-hQE"/>
+                                        <exclude reference="Ylj-KN-euS"/>
+                                        <exclude reference="pOI-dC-h9k"/>
+                                        <exclude reference="xuc-Yl-Nmv"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pFP-Qh-iNp" firstAttribute="top" secondItem="sP3-IU-ijj" secondAttribute="bottom" constant="10" id="07J-dJ-ID1"/>
+                            <constraint firstItem="dSK-70-fBj" firstAttribute="height" secondItem="xse-QD-Sid" secondAttribute="height" id="AP7-vw-l9B"/>
+                            <constraint firstItem="dSK-70-fBj" firstAttribute="centerY" secondItem="xse-QD-Sid" secondAttribute="centerY" id="InM-jj-D54"/>
+                            <constraint firstAttribute="trailing" secondItem="sP3-IU-ijj" secondAttribute="trailing" constant="20" id="Ioc-3M-btK"/>
+                            <constraint firstItem="dSK-70-fBj" firstAttribute="centerX" secondItem="xse-QD-Sid" secondAttribute="centerX" id="Vcc-h7-ost"/>
+                            <constraint firstItem="sP3-IU-ijj" firstAttribute="top" secondItem="xse-QD-Sid" secondAttribute="bottom" constant="10" id="YBS-Ti-pt7"/>
+                            <constraint firstItem="xse-QD-Sid" firstAttribute="leading" secondItem="Jea-Yv-5Wb" secondAttribute="leading" id="cOD-dN-fde"/>
+                            <constraint firstItem="sP3-IU-ijj" firstAttribute="leading" secondItem="Jea-Yv-5Wb" secondAttribute="leading" constant="20" id="ckQ-st-HLg"/>
+                            <constraint firstItem="dSK-70-fBj" firstAttribute="leading" secondItem="Jea-Yv-5Wb" secondAttribute="leading" constant="18" id="coe-je-74I"/>
+                            <constraint firstItem="dSK-70-fBj" firstAttribute="width" secondItem="xse-QD-Sid" secondAttribute="width" id="fNS-Fs-9a9"/>
+                            <constraint firstItem="xse-QD-Sid" firstAttribute="top" secondItem="Jea-Yv-5Wb" secondAttribute="top" id="m7G-RI-5y3"/>
+                            <constraint firstAttribute="trailing" secondItem="xse-QD-Sid" secondAttribute="trailing" id="rlJ-c7-mgM"/>
+                            <constraint firstAttribute="trailing" secondItem="dSK-70-fBj" secondAttribute="trailing" constant="10" id="uo2-f5-AFp"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="xse-QD-Sid"/>
+                                <exclude reference="dSK-70-fBj"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="cOD-dN-fde"/>
+                                <exclude reference="m7G-RI-5y3"/>
+                                <exclude reference="rlJ-c7-mgM"/>
+                                <exclude reference="AP7-vw-l9B"/>
+                                <exclude reference="InM-jj-D54"/>
+                                <exclude reference="Vcc-h7-ost"/>
+                                <exclude reference="coe-je-74I"/>
+                                <exclude reference="fNS-Fs-9a9"/>
+                                <exclude reference="uo2-f5-AFp"/>
+                                <exclude reference="Ioc-3M-btK"/>
+                                <exclude reference="YBS-Ti-pt7"/>
+                                <exclude reference="ckQ-st-HLg"/>
+                                <exclude reference="07J-dJ-ID1"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="xse-QD-Sid"/>
+                                <include reference="dSK-70-fBj"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="cOD-dN-fde"/>
+                                <include reference="m7G-RI-5y3"/>
+                                <include reference="rlJ-c7-mgM"/>
+                                <exclude reference="AP7-vw-l9B"/>
+                                <include reference="InM-jj-D54"/>
+                                <include reference="Vcc-h7-ost"/>
+                                <include reference="coe-je-74I"/>
+                                <exclude reference="fNS-Fs-9a9"/>
+                                <include reference="uo2-f5-AFp"/>
+                                <include reference="Ioc-3M-btK"/>
+                                <include reference="YBS-Ti-pt7"/>
+                                <include reference="ckQ-st-HLg"/>
+                                <include reference="07J-dJ-ID1"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="URD-c2-3ov" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-121.5" y="258"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="UWWhitewateHyland4" width="547" height="365"/>
+        <image name="hylandHallMain" width="731" height="1024"/>
+        <image name="uwwlogo" width="300" height="300"/>
+    </resources>
 </document>
